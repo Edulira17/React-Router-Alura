@@ -1,10 +1,20 @@
 import Banner from "components/Banner"
+import styles from './Home.module.css'
+// JSON de posts disponibilizados pela alura:
+import posts from 'json/posts.json'
 
 const Home = () => {
     return (
         <main>
             <Banner />
-            <div><h1>Pagina Inicial</h1></div>
+            
+            <ul className={styles.posts}>
+                {posts.map((post) => (
+                    <li key={post.id}>
+                        Post..
+                    </li>
+                ))}
+            </ul>
         </main>
     )
 }
