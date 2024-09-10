@@ -1,22 +1,18 @@
-import Banner from "components/Banner"
-import styles from './Home.module.css'
+import styles from "./Home.module.css";
+import Posts from "components/Posts";
 // JSON de posts disponibilizados pela alura:
-import posts from 'json/posts.json'
+import posts from "json/posts.json";
 
 const Home = () => {
     return (
-        <main>
-            <Banner />
-            
-            <ul className={styles.posts}>
-                {posts.map((post) => (
-                    <li key={post.id}>
-                        Post..
-                    </li>
-                ))}
-            </ul>
-        </main>
-    )
-}
+        <ul className={styles.posts}>
+            {posts.map((post) => (
+                <li key={post.id}>
+                    <Posts post={post} />
+                </li>
+            ))}
+        </ul>
+    );
+};
 
-export default Home
+export default Home;

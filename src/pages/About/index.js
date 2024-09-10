@@ -1,3 +1,4 @@
+import Banner from "components/Banner"
 
 const About = () => {
     return (
