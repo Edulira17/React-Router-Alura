@@ -9,11 +9,12 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Navbar />
+      
       {/* Responsável pela parte do roteamento */}
       <Routes>
         <Route path="/" element={<PageDefault />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
         </Route>
         {/* Cai nessa rota quando a aplicação nao encontra nenhuma rota válida*/}
         <Route path="*" element={<div>Not Found</div>} />
