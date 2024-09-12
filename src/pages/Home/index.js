@@ -1,5 +1,5 @@
 import styles from "./Home.module.css";
-import Posts from "components/Posts";
+import Posts from "components/PostCard";
 // JSON de posts disponibilizados pela alura:
 import posts from "json/posts.json";
 

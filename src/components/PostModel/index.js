@@ -7,7 +7,7 @@ const PostModel = ({fotoCapa, titulo, children}) => {
                 className={styles.fotoCapa}
                 style={{ backgroundImage: `url(${fotoCapa})` }}
             ></div>
-
+j
             <h2 className={styles.titulo}>
                 {titulo}
             </h2>
