@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className={styles.rodape}>
       <MarcaRegistrada />
 
-      Desenvolvido por Alura.
+      Desenvolvido por Eduardo Lira.
     </footer>
   )
 }
