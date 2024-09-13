@@ -1,7 +1,12 @@
 import styles from './NotFound.module.css'
 import erro404 from 'assets/erro_404.png'
+import Button from 'components/mainButton'
+import { useNavigate } from 'react-router-dom'
 
 const NotFound = () => {
+    // O useNavigate retorna uma função chamada navigate. Quando você chama essa função, ela redireciona o usuário para outra página da sua aplicação.
+    const navegar = useNavigate();
+
     return (
         <>
             <div className={styles.conteudoContainer}>
@@ -17,8 +22,10 @@ const NotFound = () => {
                     Aguarde uns instantes e recarregue a página, ou volte para a página inicial.
                 </p>
 
-                <div className={styles.botaoContainer}>
-                    <button>Voltar</button>
+                <div className={styles.botaoContainer} onClick={() => navegar(-1)}>
+                    <Button tamanho="lg">
+                        Voltar
+                    </Button>
                 </div>
 
                 <img
