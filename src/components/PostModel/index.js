@@ -14,7 +14,6 @@ j
 
             <div className={styles.postConteudoContainer}>
                 {children}
-
             </div>
 
         </article>
